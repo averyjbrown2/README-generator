@@ -31,12 +31,12 @@ const questions = () =>
 {
     type: "input",
     message: "Contribution guidelines:",
-    name: "guidelines"
+    name: "contributing"
 },
 {
     type: "input",
     message: "Test instructions:",
-    name: "instructions"
+    name: "tests"
 },
 {
     type: "input",
@@ -66,11 +66,34 @@ const generateHTML = (answers) =>
   <title>Document</title>
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
+    <h1>${answers.title}</h1><hr>
+    <h2 id="descriptionID">Description</h2><hr>
+    <p>${answers.description}</p>
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="descriptionID">Description</a></li>
+        <li><a href="installationID">Installation</a></li>
+        <li><a href="usageID">Usage</a></li>
+        <li><a href="contributingID">Contributing</a></li>
+        <li><a href="testsID">Tests</a></li>
+        <li><a href="licenseID">License</a></li>
+    </ul><hr>
+    
+  
+    <h2 id="installationID">Installation</h2>
+    <p>${answers.installation}</p>
+    <h2 id="usageID">Usage</h2>
+    <p>${answers.usage}</p>
+    <h2 id="contributingID">Contributing</h2>
+    <p>${answers.contributing}</p>
+    <h2 id="testsID">Tests</h2>
+    <p>${answers.tests}</p>
+    <h2 id="licenseID">Tests</h2>
+    <p>${answers.license}</p>
+  
+    
+    
+    <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
       <li class="list-group-item">My GitHub username is ${answers.github}</li>
       <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
