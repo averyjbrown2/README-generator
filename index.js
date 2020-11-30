@@ -51,8 +51,8 @@ const questions = () =>
 {
     type: "list",
     message: "License:",
-    name: "license"
-    choices: [ISC]
+    name: "license",
+    choices: ["ISC", "MIT", "Mozilla Public License 2.0"]
 },
 ]);
 
