@@ -92,12 +92,6 @@ const generateHTML = (answers) =>
     <p>${answers.license}</p>
   
     
-    
-    <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
   </div>
 </div>
 </body>
@@ -107,3 +101,6 @@ promptUser()
     .then((asnwers) => writeFileAsync('index.html', generateHTML(answers)))
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
+
+function init();
+init();
