@@ -1,12 +1,13 @@
-![Image](https://img.shields.io/static/v1?label=License&message=
-    ISC&color=grey)
+
+ ![Image](https://img.shields.io/static/v1?label=License&
+    message=ISC&color=grey)
 
 
-#README  
+# README generator  
 
 
 ### Description  
-readme generator
+this is a readme generator
 
 ### Table of Contents  
 [Description](#description)  
@@ -19,16 +20,16 @@ readme generator
 
 
 ### Installation  
-Install it
+install it
 
 ### Usage  
-Use it  
+use it  
 
 ### Contributing  
-Contributions provided by: Hank
+Contributions provided by: hank
 
 ### Tests  
-Test it
+test it
 
 ### License  
 This application is covered under the ISC license

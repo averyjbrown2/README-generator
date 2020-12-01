@@ -95,7 +95,7 @@ This application is covered under the ${answers.license} license
 
 ### Questions  
 For further questions, please contact me at ${answers.email}  
-[Github](https://unchar.bootcampcontent.com/${answers.github}/)`
+[Github link](https://unchar.bootcampcontent.com/${answers.github}/)`
 
 promptUser()
 //creates readme file and invokes markdown function
