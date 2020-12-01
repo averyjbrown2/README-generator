@@ -45,8 +45,8 @@ const questions = () =>
 },
 {
     type: "input",
-    message: "LinkedIn URL:",
-    name: "linkedin"
+    message: "Email:",
+    name: "email"
 },
 {
     type: "list",
@@ -94,6 +94,7 @@ const generateHTML = (answers) =>
     <p>This application is covered under the ${answers.license} license</p>
     <h2 id="questionsID">Questions</h2>
     <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}"</p>
+    <p>For further questions, please contact me at ${answers.email}"</p>
   
     
   </div>
