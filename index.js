@@ -58,8 +58,7 @@ const promptUser = () =>
 const generateMarkdown = (answers) =>
 //layout of readme 
  `
- ![Image](https://img.shields.io/badge/license-
-    ${answers.license}-grey)
+ [![License](https://img.shields.io/badge/license-${answers.license}-red)]
 
 
 # ${answers.title}  

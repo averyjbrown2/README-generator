@@ -1,13 +1,12 @@
 
- ![Image](https://img.shields.io/static/v1?label=License&
-    message=ISC&color=grey)
+ ![Image](https://img.shields.io/badge/license-ISC-red)
 
 
-# README generator  
+# README  
 
 
 ### Description  
-this is a readme generator
+readme generator
 
 ### Table of Contents  
 [Description](#description)  
@@ -26,7 +25,7 @@ install it
 use it  
 
 ### Contributing  
-Contributions provided by: hank
+Contributions provided by: Hank
 
 ### Tests  
 test it
@@ -35,5 +34,5 @@ test it
 This application is covered under the ISC license
 
 ### Questions  
-For further questions, please contact me at me@email  
-[Github](https://unchar.bootcampcontent.com/me/)
+For further questions, please contact me at me@me  
+[Github link](https://unchar.bootcampcontent.com/me/)
