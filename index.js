@@ -99,15 +99,14 @@ ${answers.title}
 ${answers.description}
 
 ###Table of Contents
-[Description]#description
-[Installation]#installation
-[Usage]#usage
-[Contributing]#contributing
-[Tests]#tests
-[License]#license
-[Questions]#questions
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[Contributing](#contributing)
+[Tests](#tests)
+[License](#license)
+[Questions](#questions)
 
-${answers.description}
 
 ###Installation
 ${answers.installation}
