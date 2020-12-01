@@ -104,7 +104,8 @@ ${answers.tests}
 ${answers.license}
 ###Questions
 For further questions, please contact me at ${answers.email}
-Github: ${answers.github}
+Github: (https://unchar.bootcampcontent.com/${answers.github}/)
+
 function writeToFile(fileName, data) {
     return fs.writeFileSync(filename, data);
 }
