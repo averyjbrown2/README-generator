@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-//const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 const util = require('util');
@@ -63,7 +63,7 @@ const generateHTML = (answers) =>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
+  <title>README</title>
 </head>
 <body>
     <license>-<${answers.license}>-<grey>
@@ -93,19 +93,14 @@ const generateHTML = (answers) =>
     <h2 id="licenseID">License</h2>
     <p>This application is covered under the ${answers.license} license</p>
     <h2 id="questionsID">Questions</h2>
-    <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}"</p>
+    <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}">https://unchar.bootcampcontent.com/${answers.github}</a></p>
     <p>For further questions, please contact me at ${answers.email}"</p>
-  
-    
-  </div>
-</div>
 </body>
 </html>`;
 
-function init()
-    .then((asnwers) => writeFileAsync('index.html', generateHTML(answers)))
+function init() {
+    .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
-
-
+    }
 init();
