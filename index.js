@@ -85,7 +85,26 @@ const PromptUser = () =>
 //     <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}">https://unchar.bootcampcontent.com/${answers.github}</a></p>
 //     <p>For further questions, please contact me at ${answers.email}"</p>
 
-const
+const generateMarkdown = (answers) =>
+<license>-<${answers.license}>-<grey>
+
+#Title
+${answers.title}
+
+
+###Description
+${answers.description}
+
+###Table of Contents
+${answers.description}
+${answers.installation}
+${answers.usage}
+${answers.contributing}
+${answers.tests}
+${answers.license}
+###Questions
+For further questions, please contact me at ${answers.email}
+Github: ${answers.github}
 function writeToFile(fileName, data) {
     return fs.writeFileSync(filename, data);
 }
