@@ -96,22 +96,37 @@ ${answers.title}
 ${answers.description}
 
 ###Table of Contents
+[Description]#description
+[Installation]#installation
+[Usage]#usage
+[Contributing]#contributing
+[Tests]#tests
+[License]#license
+[Questions]#questions
+
 ${answers.description}
+
+###Installation
 ${answers.installation}
+
+###Usage
 ${answers.usage}
-${answers.contributing}
+
+###Contributing
+Contributions provided by: ${answers.contributing}
+
+###Tests
 ${answers.tests}
-${answers.license}
+
+###License
+This application is covered under the ${answers.license} license
+
+
 ###Questions
 For further questions, please contact me at ${answers.email}
-Github: (https://unchar.bootcampcontent.com/${answers.github}/)
+[Github]: (https://unchar.bootcampcontent.com/${answers.github}/)
 
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(filename, data);
-}
-
-function init() {
-    inquirer.prompt(questions).then((answers) => writeToFile("README.md", generateMarkdown({answers})))
-    console.log("Successfully wrote to README");
+PromptUser()
+.then  console.log("Successfully wrote to README");
     }
 init();
