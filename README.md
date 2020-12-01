@@ -1,8 +1,8 @@
 ![Image](https://img.shields.io/static/v1?label=License&message=
-    MIT&color=grey)
+    ISC&color=grey)
 
 
-# README  
+#README  
 
 
 ### Description  
@@ -25,14 +25,14 @@ Install it
 Use it  
 
 ### Contributing  
-Contributions provided by: Hank Holmes
+Contributions provided by: Hank
 
 ### Tests  
 Test it
 
 ### License  
-This application is covered under the MIT license
+This application is covered under the ISC license
 
 ### Questions  
-For further questions, please contact me at me@gmail.com  
+For further questions, please contact me at me@email  
 [Github](https://unchar.bootcampcontent.com/me/)

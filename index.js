@@ -1,3 +1,4 @@
+//adding all the packages that will be needed
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
@@ -5,7 +6,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 const promptUser = () =>
     inquirer.prompt([
-    
+//questions which will be asked to user in the terminal
 {
     type: "input",
     message: "Title of project:",
@@ -53,44 +54,15 @@ const promptUser = () =>
     choices: ["ISC", "MIT", "Mozilla Public License 2.0"]
 },
 ]);
-
-// const generate = (answers) =>
-//     <license>-<${answers.license}>-<grey>
-//     <h1>${answers.title}</h1><hr>
-//     <h2 id="descriptionID">Description</h2><hr>
-//     <p>${answers.description}</p>
-//     <h2>Table of Contents</h2>
-//     <ul>
-//         <li><a href="descriptionID">Description</a></li>
-//         <li><a href="installationID">Installation</a></li>
-//         <li><a href="usageID">Usage</a></li>
-//         <li><a href="contributingID">Contributing</a></li>
-//         <li><a href="testsID">Tests</a></li>
-//         <li><a href="licenseID">License</a></li>
-//         <li><a href="questionsID">Questions</a></li>
-//     </ul><hr>
-    
-  
-//     <h2 id="installationID">Installation</h2>
-//     <p>${answers.installation}</p>
-//     <h2 id="usageID">Usage</h2>
-//     <p>${answers.usage}</p>
-//     <h2 id="contributingID">Contributing</h2>
-//     <p>${answers.contributing}</p>
-//     <h2 id="testsID">Tests</h2>
-//     <p>${answers.tests}</p>
-//     <h2 id="licenseID">License</h2>
-//     <p>This application is covered under the ${answers.license} license</p>
-//     <h2 id="questionsID">Questions</h2>
-//     <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}">https://unchar.bootcampcontent.com/${answers.github}</a></p>
-//     <p>For further questions, please contact me at ${answers.email}"</p>
-
+//creates function for getting answers from terminal into provided layout
 const generateMarkdown = (answers) =>
- `![Image](https://img.shields.io/static/v1?label=License&message=
-    ${answers.license}&color=grey)
+//layout of readme 
+ `
+ ![Image](https://img.shields.io/static/v1?label=License&
+    message=${answers.license}&color=grey)
 
 
-#${answers.title}  
+# ${answers.title}  
 
 
 ### Description  
@@ -126,6 +98,9 @@ For further questions, please contact me at ${answers.email}
 [Github](https://unchar.bootcampcontent.com/${answers.github}/)`
 
 promptUser()
+//creates readme file and invokes markdown function
 .then((answers) => writeFileAsync(`README.md`, generateMarkdown(answers)))
+//confirmation to let terminal user know that readme was written
     .then(() => console.log(`Successfully wrote to README.md file`))
+//logs errors
     .catch((err) => console.error(err));
