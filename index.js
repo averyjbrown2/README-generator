@@ -101,12 +101,13 @@ This application is covered under the ${answers.license} license
 ### Questions  
 For further questions, please contact me at:
 ${answers.email}  
-[Github link](https://unchar.bootcampcontent.com/${answers.github}/)
+[Github link](https://unchar.bootcampcontent.com/${answers.github}/)  
+
 
 
 ### Images  
-![README VS Code](./Assets/image1.png)  
-![README Preview](./Assets/image2.png)`
+![README VS Code](./Assets/image1.png)    
+![README Preview](./Assets/image2.png)`  
 
 promptUser()
 //creates readme file and invokes markdown function
