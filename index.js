@@ -3,8 +3,8 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-const util = require('util');
-const writeFileAsync = util.promisify(fs.writeFile);
+const util = require('utils');
+//const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = () =>
     inquirer.prompt([
