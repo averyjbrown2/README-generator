@@ -28,7 +28,7 @@ const promptUser = () =>
 },
 {
     type: "input",
-    message: "Contribution guidelines:",
+    message: "Contributors:",
     name: "contributing"
 },
 {
@@ -86,46 +86,44 @@ const promptUser = () =>
 //     <p>For further questions, please contact me at ${answers.email}"</p>
 
 const generateMarkdown = (answers) =>
- `###Yep
- ![Image](https://img.shields.io/static/v1?label=License&message=
+ `![Image](https://img.shields.io/static/v1?label=License&message=
     ${answers.license}&color=grey)
 
 
-#Title
-${answers.title}
+#${answers.title}  
 
 
-###Description
+### Description  
 ${answers.description}
 
-###Table of Contents
-[Description](#description)
-[Installation](#installation)
-[Usage](#usage)
-[Contributing](#contributing)
-[Tests](#tests)
-[License](#license)
-[Questions](#questions)
+### Table of Contents  
+[Description](#description)  
+[Installation](#installation)  
+[Usage](#usage)  
+[Contributing](#contributing)  
+[Tests](#tests)  
+[License](#license)  
+[Questions](#questions)  
 
 
-###Installation
+### Installation  
 ${answers.installation}
 
-###Usage
-${answers.usage}
+### Usage  
+${answers.usage}  
 
-###Contributing
+### Contributing  
 Contributions provided by: ${answers.contributing}
 
-###Tests
+### Tests  
 ${answers.tests}
 
-###License
+### License  
 This application is covered under the ${answers.license} license
 
-###Questions
-For further questions, please contact me at ${answers.email}
-[Github]: (https://unchar.bootcampcontent.com/${answers.github}/)`
+### Questions  
+For further questions, please contact me at ${answers.email}  
+[Github](https://unchar.bootcampcontent.com/${answers.github}/)`
 
 promptUser()
 .then((answers) => writeFileAsync(`README.md`, generateMarkdown(answers)))

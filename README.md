@@ -1,42 +1,38 @@
-###Yep
- ![Image](https://img.shields.io/static/v1?label
- =License&message=MIT&color=grey)
+![Image](https://img.shields.io/static/v1?label=License&message=
+    MIT&color=grey)
 
 
-#Title
-README
+# README  
 
-###Description
-README generator
 
-###Table of Contents
-[Description](#description)
+### Description  
+readme generator
 
-[Installation](#installation)
+### Table of Contents  
+[Description](#description)  
+[Installation](#installation)  
+[Usage](#usage)  
+[Contributing](#contributing)  
+[Tests](#tests)  
+[License](#license)  
+[Questions](#questions)  
 
-[Usage](#usage)
-[Contributing](#contributing)
-[Tests](#tests)
-[License](#license)
-[Questions](#questions)
 
-README generator
+### Installation  
+Install it
 
-###Installation
-Do it
+### Usage  
+Use it  
 
-###Usage
-Use it
+### Contributing  
+Contributions provided by: Hank Holmes
 
-###Contributing
-Contributions provided by: contribute
-
-###Tests
+### Tests  
 Test it
 
-###License
+### License  
 This application is covered under the MIT license
 
-###Questions
-For further questions, please contact me at averybgcoding@gmail.com
-[Github]: (https://unchar.bootcampcontent.com/averyjbrown2/)
+### Questions  
+For further questions, please contact me at me@gmail.com  
+[Github](https://unchar.bootcampcontent.com/me/)
