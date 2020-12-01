@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('utils');
+const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const PromptUser = () =>
-    inquirer.prompt[
+const promptUser = () =>
+    inquirer.prompt([
     
 {
     type: "input",
@@ -52,7 +52,7 @@ const PromptUser = () =>
     name: "license",
     choices: ["ISC", "MIT", "Mozilla Public License 2.0"]
 },
-];
+]);
 
 // const generate = (answers) =>
 //     <license>-<${answers.license}>-<grey>
@@ -86,7 +86,10 @@ const PromptUser = () =>
 //     <p>For further questions, please contact me at ${answers.email}"</p>
 
 const generateMarkdown = (answers) =>
-<license>-<${answers.license}>-<grey>
+ `###Yep
+ ![Image](https://img.shields.io/static/v1?label=License&message=
+    ${answers.license}&color=grey)
+
 
 #Title
 ${answers.title}
@@ -121,12 +124,11 @@ ${answers.tests}
 ###License
 This application is covered under the ${answers.license} license
 
-
 ###Questions
 For further questions, please contact me at ${answers.email}
-[Github]: (https://unchar.bootcampcontent.com/${answers.github}/)
+[Github]: (https://unchar.bootcampcontent.com/${answers.github}/)`
 
-PromptUser()
-.then  console.log("Successfully wrote to README");
-    }
-init();
+promptUser()
+.then((answers) => writeFileAsync(`README.md`, generateMarkdown(answers)))
+    .then(() => console.log(`Successfully wrote to README.md file`))
+    .catch((err) => console.error(err));
