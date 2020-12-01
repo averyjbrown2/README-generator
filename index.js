@@ -102,10 +102,10 @@ const generateHTML = (answers) =>
 </body>
 </html>`;
 
-promptUser()
+function init()
     .then((asnwers) => writeFileAsync('index.html', generateHTML(answers)))
     .then(() => console.log("Successfully wrote to index.html"))
     .catch((err) => console.error(err));
 
-function init();
+
 init();
