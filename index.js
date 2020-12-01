@@ -66,6 +66,7 @@ const generateHTML = (answers) =>
   <title>Document</title>
 </head>
 <body>
+    <license>-<${answers.license}>-<grey>
     <h1>${answers.title}</h1><hr>
     <h2 id="descriptionID">Description</h2><hr>
     <p>${answers.description}</p>
@@ -77,6 +78,7 @@ const generateHTML = (answers) =>
         <li><a href="contributingID">Contributing</a></li>
         <li><a href="testsID">Tests</a></li>
         <li><a href="licenseID">License</a></li>
+        <li><a href="questionsID">Questions</a></li>
     </ul><hr>
     
   
@@ -88,8 +90,10 @@ const generateHTML = (answers) =>
     <p>${answers.contributing}</p>
     <h2 id="testsID">Tests</h2>
     <p>${answers.tests}</p>
-    <h2 id="licenseID">Tests</h2>
-    <p>${answers.license}</p>
+    <h2 id="licenseID">License</h2>
+    <p>This application is covered under the ${answers.license} license</p>
+    <h2 id="questionsID">Questions</h2>
+    <p>Github: <a href="https://unchar.bootcampcontent.com/${answers.github}"</p>
   
     
   </div>
