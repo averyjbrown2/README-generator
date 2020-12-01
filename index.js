@@ -58,7 +58,7 @@ const promptUser = () =>
 const generateMarkdown = (answers) =>
 //layout of readme 
  `
- [![License](https://img.shields.io/badge/license-${answers.license}-red)]
+ ![License](https://img.shields.io/badge/license-${answers.license}-red)
 
 
 # ${answers.title}  
@@ -66,6 +66,7 @@ const generateMarkdown = (answers) =>
 
 ### Description  
 ${answers.description}
+
 
 ### Table of Contents  
 [Description](#description)  
@@ -80,21 +81,32 @@ ${answers.description}
 ### Installation  
 ${answers.installation}
 
+
 ### Usage  
 ${answers.usage}  
+
 
 ### Contributing  
 Contributions provided by: ${answers.contributing}
 
+
 ### Tests  
 ${answers.tests}
+
 
 ### License  
 This application is covered under the ${answers.license} license
 
+
 ### Questions  
-For further questions, please contact me at ${answers.email}  
-[Github link](https://unchar.bootcampcontent.com/${answers.github}/)`
+For further questions, please contact me at:
+${answers.email}  
+[Github link](https://unchar.bootcampcontent.com/${answers.github}/)
+
+
+
+![README VS Code](./Assets/image1.png)  
+![README Preview](./Assets/image2.png)`
 
 promptUser()
 //creates readme file and invokes markdown function
