@@ -45,8 +45,11 @@ averybgcoding@gmail.com
 [Github link](https://unchar.bootcampcontent.com/averyjbrown2/)  
 
 
+
+
 ### Demo Video  
-[Sample Readme.md](https://drive.google.com/file/d/12ndz_vE1oEMYPIyKGhhqdEW0-TfFzlSb/view)    
+[Sample README.md](./Assets/Sample-README.md)
+[Sample README.md Video](https://drive.google.com/file/d/12ndz_vE1oEMYPIyKGhhqdEW0-TfFzlSb/view)    
 
 
 ### Images
